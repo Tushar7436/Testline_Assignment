@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
+import { User } from "lucide-react"
 import "./App.css"
 
 function App() {
@@ -9,8 +10,21 @@ function App() {
     navigate("/questions")
   }
 
+  const handleNavigateToLogin = () => {
+    navigate("/login")
+  }
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 overflow-hidden relative">
+      <motion.button
+        className="absolute top-4 right-4 p-2 bg-white bg-opacity-20 rounded-full text-white hover:bg-opacity-30 transition-all duration-200"
+        onClick={handleNavigateToLogin}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <User size={24} />
+      </motion.button>
+
       {/* Background shapes */}
       <motion.div
         className="absolute top-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full"
