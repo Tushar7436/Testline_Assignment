@@ -19,7 +19,7 @@ The **Awesome Quiz App** is an interactive and dynamic quiz platform built with 
 ## Setup Instructions
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/awesome-quiz-app.git
+git clone https://github.com/Tushar7436/Testline_Assignment
 cd Quiz-App
 ```
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ### 4. Configure the Backend API
 Modify the **API URL** inside `Questions.jsx` to match your backend server:
 ```javascript
-const API_URL = "http://127.0.0.1:8000/fetch-data_questions";
+const API_URL = "https://api.jsonserve.com/Uw5CrX";
 ```
 Make sure your FastAPI backend is running before starting the frontend.
 
