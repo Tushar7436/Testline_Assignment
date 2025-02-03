@@ -13,7 +13,6 @@ The **Awesome Quiz App** is an interactive and dynamic quiz platform built with 
 ## Technologies Used
 - **Frontend**: React.js, Tailwind CSS, Framer Motion, Axios
 - **Backend**: FastAPI, Uvicorn, Pydantic
-- **Database (Optional)**: PostgreSQL / SQLite
 - **State Management**: React Hooks (`useState`, `useEffect`)
 - **HTTP Requests**: Axios
 
@@ -21,19 +20,19 @@ The **Awesome Quiz App** is an interactive and dynamic quiz platform built with 
 ### 1. Clone the Repository
 ```sh
 git clone https://github.com/yourusername/awesome-quiz-app.git
-cd awesome-quiz-app
+cd Quiz-App
 ```
 
 ### 2. Install Frontend Dependencies
 Ensure you have **Node.js** installed, then run:
 ```sh
-yarn install  # or npm install
+npm install
 ```
 
 ### 3. Install Backend Dependencies
 Navigate to the backend folder and create a virtual environment:
 ```sh
-cd backend
+cd Quiz-App-backend
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
@@ -62,22 +61,22 @@ This will start the frontend at `http://localhost:5173/`.
 
 ## Folder Structure
 ```
-awesome-quiz-app/
+awesome-quiz-app-backend/
 │── backend/
 │   ├── main.py
-│   ├── models.py
-│   ├── routes/
-│   ├── database.py
 │   ├── requirements.txt
-│── frontend/
+
+│── Quiz-App/
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── Questions.jsx
-│   │   │   ├── Scoreboard.jsx
 │   │   │   ├── MovingBackground.jsx
 │   │   │   ├── LoadingScreen.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── signup.jsx
 │   │   ├── App.jsx
-│   │   ├── main.jsx
+│   │   ├── QuestionBank.jsx
+|   |   ├── PagenotFound.jsx
+│   │   ├── Scoreboard.jsx
 │   ├── public/
 │   ├── package.json
 │   ├── tailwind.config.js
@@ -90,8 +89,7 @@ awesome-quiz-app/
 | **GET** | `/fetch-data_questions` | Fetches quiz questions |
 | **POST** | `/validate-answer` | Validates submitted answers |
 
-## Contributing
-Contributions are welcome! Feel free to submit a pull request or open an issue.
+
 
 ## License
 This project is licensed under the **MIT License**.
