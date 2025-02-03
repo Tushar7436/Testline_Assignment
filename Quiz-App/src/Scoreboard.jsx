@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import MovingBackground from "./MovingBackground.jsx";
+import MovingBackground from "../src/components/MovingBackground.jsx";
 
 function Scoreboard({ quizResults, theme }) {
   if (!quizResults || !quizResults.results) {
