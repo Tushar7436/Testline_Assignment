@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ### 4. Configure the Backend API
 Modify the **API URL** inside `Questions.jsx` to match your backend server:
 ```javascript
-const API_URL = "http://127.0.0.1:8000/fetch-data_questions";
+const API_URL = "https://api.jsonserve.com/Uw5CrX";
 ```
 Make sure your FastAPI backend is running before starting the frontend.
 
