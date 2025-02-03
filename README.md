@@ -19,7 +19,7 @@ The **Awesome Quiz App** is an interactive and dynamic quiz platform built with 
 ## Setup Instructions
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/awesome-quiz-app.git
+git clone https://github.com/Tushar7436/Testline_Assignment
 cd Quiz-App
 ```
 
