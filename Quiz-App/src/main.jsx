@@ -9,8 +9,8 @@ import {
 } from "react-router-dom";
 
 import Questions from './QuestionBank.jsx';
-import LoginPage  from './Login.jsx';
-import Signup from './Signup.jsx'
+import LoginPage  from '../src/components/Login.jsx';
+import Signup from '../src/components/Signup.jsx';  
 import NotFound from "./PageNotFound.jsx"
 import { Toaster } from 'sonner';
 

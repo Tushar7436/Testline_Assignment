@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { motion, AnimatePresence } from "framer-motion"
-import LoadingScreen from "./LoadingScreen.jsx"
-import MovingBackground from "./MovingBackground.jsx"
+import LoadingScreen from "../src/components/LoadingScreen.jsx"
+import MovingBackground from "../src/components/MovingBackground.jsx"
 import Scoreboard from "./Scoreboard.jsx"
 
 const themes = [

@@ -5,10 +5,9 @@ import httpx
 
 app = FastAPI()
 
-# Configure CORS
 app.add_middleware(     
     CORSMiddleware,
-    allow_origins=["*"],  # Allow all origins (change this in production)
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,7 +38,6 @@ async def fetch_data():
             response.raise_for_status()
             data = response.json()
             
-            # Extract questions with descriptions and their options
             questions_with_options = []
             for item in data.get("questions", []):
                 questions_with_options.append({
@@ -114,10 +112,10 @@ async def validate_answer(answers_list: AnswersPayload):
                         
                         results.append({
                             "question_id": submitted_answer.question_id,
-                            "question_description": question_description,  # Add question description
+                            "question_description": question_description, 
                             "selected_option_id": submitted_answer.selected_option_id,
-                            "selected_option_description": selected_option.get("description", "N/A") if selected_option else "N/A",  # Add selected option description
-                            "correct_option_description": correct_option.get("description", "N/A") if correct_option else "N/A",  # Add correct option description
+                            "selected_option_description": selected_option.get("description", "N/A") if selected_option else "N/A",  
+                            "correct_option_description": correct_option.get("description", "N/A") if correct_option else "N/A", 
                             "correct": selected_option.get("is_correct", False) if selected_option else False,
                             "detailed_solution": item.get("detailed_solution", "Solution not available"),
                         })
